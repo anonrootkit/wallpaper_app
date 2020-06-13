@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+    <string name="auth_screen_title">Wallpapers</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="upload_picture">Upload selected image ?</string>
+    <string name="Yes">Yes</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Are you sure you want to sign out ?</string>
+</resources>

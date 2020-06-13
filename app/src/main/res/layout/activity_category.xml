@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/category_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:verticalSpacing="4dp"
+        android:layout_below="@id/category_toolbar"
+        android:id="@+id/category_wallpapers"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        />
+    <RelativeLayout
+        android:id="@+id/loading_category_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/loading_category_wallpaper_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Loading wallpapers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <ProgressBar
+            android:id="@+id/loading_category_wallpaper_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_above="@id/loading_category_wallpaper_text_view"
+            android:layout_marginBottom="8dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No wallpapers found"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:typeface="sans"
+        android:id="@+id/category_no_wallpapers_banner"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

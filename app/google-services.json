@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083129127037",
+    "firebase_url": "https://wallpaper-99a7d.firebaseio.com",
+    "project_id": "wallpaper-99a7d",
+    "storage_bucket": "wallpaper-99a7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083129127037:android:ff761a66d3cfb1a4ba9114",
+        "android_client_info": {
+          "package_name": "com.yash.wallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083129127037-quvr2414aba15db6lu5n087ho5a85eic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKKgZr99nTGixnwoXvKXiKXE-KuszzG9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083129127037-quvr2414aba15db6lu5n087ho5a85eic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

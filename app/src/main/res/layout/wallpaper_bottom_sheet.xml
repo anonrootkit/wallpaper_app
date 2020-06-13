@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Set as wallpaper"
+        android:drawableStart="@drawable/set_icon"
+        android:drawableTint="#888888"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:id="@+id/set_wallpaper"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Save image"
+        android:drawableStart="@drawable/save_icon"
+        android:drawableTint="#888888"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:id="@+id/save_wallpaper"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Share wallpaper"
+        android:drawableStart="@drawable/share_icon"
+        android:drawableTint="#888888"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:id="@+id/share_wallpaper"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="Remove"
+        android:drawableStart="@drawable/remove_icon"
+        android:drawableTint="#888888"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:id="@+id/remove_wallpaper"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:visibility="gone"
+        />
+</LinearLayout>
