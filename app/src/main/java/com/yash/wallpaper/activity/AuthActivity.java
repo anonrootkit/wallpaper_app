@@ -3,7 +3,6 @@ package com.yash.wallpaper.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,12 +29,9 @@ public class AuthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_auth);
         CommunicationHelper.init(getApplicationContext());
 
-        findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signInIntent = CommunicationHelper.getGoogleSignInClient().getSignInIntent();
-                startActivityForResult(signInIntent, RC_SIGN_IN);
-            }
+        findViewById(R.id.sign_in_button).setOnClickListener(view -> {
+            Intent signInIntent = CommunicationHelper.getGoogleSignInClient().getSignInIntent();
+            startActivityForResult(signInIntent, RC_SIGN_IN);
         });
 
     }

@@ -10,31 +10,31 @@
     android:paddingTop="32dp"
     android:paddingBottom="16dp"
     >
+
     <ImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:scaleType="centerCrop"
         android:layout_marginBottom="16dp"
         android:id="@+id/profile_pic"
-        android:background="@drawable/blank_portrait"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:textSize="16sp"
-        android:text="Ankit Gupta"
         android:textStyle="bold"
         android:typeface="sans"
-        android:id="@+id/user_name"
+        android:id="@+id/user_email"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#bbbbbb"
         android:textSize="12sp"
-        android:text="ankit@gmail.com"
         android:typeface="sans"
-        android:id="@+id/user_email"
+        android:id="@+id/user_name"
         />
+
 </LinearLayout>

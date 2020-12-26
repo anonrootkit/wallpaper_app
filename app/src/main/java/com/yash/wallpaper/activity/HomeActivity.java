@@ -80,12 +80,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void initFab() {
-        uploadWallpaperFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openFileChooser();
-            }
-        });
+        uploadWallpaperFab.setOnClickListener(view -> openFileChooser());
     }
 
     private void initViewPager() {
@@ -248,7 +243,6 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-
     }
 
     private void init() {
